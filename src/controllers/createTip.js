@@ -1,10 +1,17 @@
-const createTip = (app) => {
+import tipsDB from "../../tips-database.js";
+
+const createTip = (app, db) => {
   app.post("/create", (req, res) => {
-    res.send("Rota POST para usuario");
+    let x = req.body;
+    console.log(x);
+    db.push(x);
+    res.send("Dica inserida com sucesso");
   });
 
   app.get("/tip", (req, res) => {
-    res.send("Rota POST para usuario");
+    let randomTip = Math.floor(Math.random() * tipsDB.length);
+    console.log(tipsDB[randomTip]);
+    res.send(db);
   });
 };
 

@@ -1,6 +1,6 @@
 import express from "express";
-import createTip from "./controller/createTip";
-import receiveTip from "./controller/tip";
+import createTip from "./controllers/createTip.js";
+import tipsDB from "../tips-database.js";
 
 const app = express();
 const port = 8080;
@@ -9,5 +9,4 @@ app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
 });
 
-createTip();
-receiveTip();
+createTip(app, tipsDB);

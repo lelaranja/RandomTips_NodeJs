@@ -9,8 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/appTip.js",
-    "dev" : "nodemon ./src/appTip.js"
+    "start": "node ./src/app.js",
+    "dev" : "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
