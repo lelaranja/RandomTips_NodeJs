@@ -1,5 +1,7 @@
 import tipsDB from "../database/tips-database.js";
 
+let id = 0;
+
 class Dicas {
   constructor(id, dica) {
     this.id = id++;
@@ -14,3 +16,5 @@ class Dicas {
     return randomTip;
   };
 }
+
+export default Dicas;
