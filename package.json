@@ -5,16 +5,24 @@
   },
   "name": "exgetpost",
   "version": "1.0.0",
-  "main": "appTip.js",
+  "main": "src/app.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/app.js",
-    "dev" : "nodemon ./src/app.js"
+    "start": "node .exgetpost/src/app.js",
+    "dev": "nodemon .exgetpost/src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lelaranja/RandomTips_NodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lelaranja/RandomTips_NodeJs/issues"
+  },
+  "homepage": "https://github.com/lelaranja/RandomTips_NodeJs#readme",
   "description": ""
 }

@@ -1,18 +1,16 @@
 import tipsDB from "../database/tips-database.js";
 
-let id = 0;
-
 class Dicas {
   constructor(id, dica) {
-    this.id = id++;
+    this.id = id;
     this.dica = dica;
   }
   insereDica = (dica) => {
-    tipsDB.dica.push(dica);
+    tipsDB.push(dica);
   };
 
   pegaDica = () => {
-    const randomTip = Math.floor(Math.random() * (tipsDB.length + 1));
+    const randomTip = tipsDB[Math.floor(Math.random() * tipsDB.length)];
     return randomTip;
   };
 }
